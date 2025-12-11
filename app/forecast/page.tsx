@@ -183,7 +183,7 @@ export default function ForecastPage() {
                                     <div className="flex justify-between items-start mb-2">
                                         <h4 className="font-bold text-gray-800 text-sm">{rec.title}</h4>
                                         <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded ${rec.priority === 'high' ? 'bg-red-100 text-red-700' :
-                                                rec.priority === 'medium' ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'
+                                            rec.priority === 'medium' ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'
                                             }`}>
                                             {rec.priority}
                                         </span>
@@ -199,7 +199,10 @@ export default function ForecastPage() {
                     <div>
                         <h3 className="text-lg font-bold text-[#232f3e] mb-4">Regional Breakdown</h3>
                         <DataGrid
-                            data={result.regionRisks}
+                            data={result.regionRisks.map((risk, index) => ({
+                                id: `${result.timeHorizon}-${risk.region ?? index}`,
+                                ...risk,
+                            }))}
                             columns={columns}
                             title={`Analysis for ${result.timeHorizon}`}
                         />
