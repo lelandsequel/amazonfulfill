@@ -1,29 +1,61 @@
 # Fulfillment Forecast & Routing Optimizer (FFRO)
 
-This is an MVP for Amazon's Fulfillment Forecast & Routing Optimizer, a tool to predict capacity risks and recommend routing changes.
+> **Role:** Product Management & Systems Architecture  
+> **Company:** Amazon (Concept Case Study)  
+> **Year:** 2025
 
-## Features
+**AI-assisted forecasting and routing recommendations for Amazon fulfillment and last-mile operations.**
 
-- **Dashboard**: High-level view of network capacity and risks.
-- **Forecast**: Predictive view of demand vs. capacity across regions.
-- **Routing Optimizer**: AI-driven recommendations for carrier allocation.
+This project is a high-fidelity MVP of an internal tool designed to help operations planners visualize network risk and make proactive routing decisions.
 
-## Getting Started
+🔗 **Repository:** [github.com/lelandsequel/amazon-fulfillment-optimizer](https://github.com/lelandsequel/amazon-fulfillment-optimizer)
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
 
-First, run the development server:
+## 🚩 The Problem
+Planners rely on fragmented dashboards and manual workflows to identify risk and make routing decisions. This leads to reactive planning, inconsistent service levels (SLA), and suboptimal capacity utilization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚡ The Solution
+FFRO simulates the logic of an expert logistics planner. It ingests scenarios (Origin FCs, Destination Regions, Time Windows) and uses AI to:
+1.  **Forecast Risk**: Assign a "Service Level Risk Score" (0-100) to the network and specific regions.
+2.  **Identify Drivers**: Pinpoint specific issues like weather events, labor constraints, or carrier capacity.
+3.  **Recommend Actions**: Provide strategic, prioritized routing changes to mitigate risk.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Key Impacts
+-   **Improved SLA performance** through early detection of regional stress zones.
+-   **Faster, more consistent routing decisions** across regions.
+-   **Reduced operational cost** from better utilization and capacity balancing.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+-   **Framework**: Next.js 16 (App Router)
+-   **Language**: TypeScript
+-   **Styling**: Tailwind CSS 4 (Amazon-inspired aesthetic)
+-   **AI Engine**: OpenAI GPT-4o (via Node SDK)
+
+## 📦 Getting Started
+
+1.  **Clone the repo**:
+    ```bash
+    git clone https://github.com/lelandsequel/amazon-fulfillment-optimizer.git
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment**:
+    Rename `.env.example` to `.env` and add your OpenAI API Key:
+    ```env
+    OPENAI_API_KEY=sk-...
+    ```
+
+4.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000).
+
+---
+
+*This is a conceptual case-study tool built for a product management portfolio. It is not an official Amazon product.*

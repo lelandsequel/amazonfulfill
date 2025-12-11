@@ -1,38 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  /* Brand Colors */
-  --squid-ink: #232f3e;
-  --smile-orange: #ff9900;
-  --link-blue: #007185;
-  --white: #ffffff;
-  --off-white: #f2f4f8;
-  --text-primary: #0f1111;
-  --text-secondary: #565959;
-  --border-default: #d5d9d9;
-  --alert-red: #cc0c39;
-  --success-green: #006400; /* Darker green for text */
-  --success-bg: #effcf1;
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --color-amazon-dark: #232F3E;
+  --color-amazon-light: #37475A;
+  --color-amazon-orange: #FF9900;
+  --color-amazon-blue: #007185;
+  --color-background-warm: #F2F4F8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark mode adjustments (optional for MVP, sticking to light/corporate default mostly) */
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
 }
 
 body {
-  color: var(--text-primary);
-  background: var(--off-white);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-color: var(--color-background-warm);
+  color: #111;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
