@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Home, TrendingUp, Truck, Settings, HelpCircle } from 'lucide-react';
+import { Home, TrendingUp, Truck, Settings, HelpCircle, FileText } from 'lucide-react';
 
 const Sidebar = () => {
     return (
@@ -30,6 +30,12 @@ const Sidebar = () => {
                         <Link href="/routing" className="flex items-center space-x-3 px-4 py-2 hover:bg-gray-700 hover:text-white text-gray-300 transition-colors">
                             <Truck size={18} />
                             <span>Routing Optimizer</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/case-study" className="flex items-center space-x-3 px-4 py-2 hover:bg-gray-700 hover:text-white text-gray-300 transition-colors">
+                            <FileText size={18} />
+                            <span>Case Study</span>
                         </Link>
                     </li>
                 </ul>
