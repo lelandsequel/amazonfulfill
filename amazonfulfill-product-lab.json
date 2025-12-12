@@ -1,0 +1,27 @@
+{
+    "title": "Fulfillment Forecast & Routing Optimizer (FFRO)",
+    "tagline": "AI-assisted forecasting and routing recommendations for Amazon fulfillment",
+    "company": "Amazon (Concept Case Study)",
+    "year": "2025",
+    "role": "Product Management & Systems Architecture",
+    "problem": "Planners rely on fragmented dashboards and manual workflows to identify network risk and make routing decisions. This leads to reactive planning, inconsistent service levels (SLA), and suboptimal capacity utilization.",
+    "description": [
+        "FFRO simulates the logic of an expert logistics planner to visualize network health.",
+        "It ingests complex scenarios (Origin FCs, Destination Regions, Time Windows) and applies predictive modeling.",
+        "The system assigns strict 'Service Level Risk Scores' and recommends specific routing changes to mitigate bottlenecks before they occur."
+    ],
+    "impact": [
+        "Improved SLA performance through early detection of regional stress zones.",
+        "Faster, more consistent routing decisions across regions.",
+        "Reduced operational cost from better utilization and capacity balancing."
+    ],
+    "tags": [
+        "Logistics",
+        "Forecasting",
+        "Next.js 16",
+        "OpenAI",
+        "Simulation"
+    ],
+    "liveUrl": "https://amazonfulfill.com",
+    "repoUrl": "https://github.com/lelandsequel/amazonfulfill"
+}
