@@ -1,6 +1,8 @@
 {
   "title": "Fulfillment Forecast & Routing Optimizer (FFRO)",
   "tagline": "AI-powered forecasting and routing recommendations for Amazon fulfillment operations.",
+  "category": "Logistics Ops",
+  "proof": "I can build forecasting and routing tools that balance cost, capacity, and service levels in large-scale fulfillment networks."
   "company": "Amazon",
   "role": "Product Manager – Supply Chain & Fulfillment Systems",
   "problem": "Amazon's fulfillment network relies on thousands of daily routing decisions across FCs, sort centers, and last-mile nodes. Existing tools are fragmented and reactive, making it hard to see emerging bottlenecks and proactively rebalance demand.",
