@@ -1,25 +1,29 @@
 {
   "title": "Fulfillment Forecast & Routing Optimizer (FFRO)",
-  "tagline": "AI-powered forecasting and routing recommendations for Amazon fulfillment operations.",
-  "category": "Logistics Ops",
-  "proof": "I can build forecasting and routing tools that balance cost, capacity, and service levels in large-scale fulfillment networks."
-  "company": "Amazon",
-  "role": "Product Manager – Supply Chain & Fulfillment Systems",
-  "problem": "Amazon's fulfillment network relies on thousands of daily routing decisions across FCs, sort centers, and last-mile nodes. Existing tools are fragmented and reactive, making it hard to see emerging bottlenecks and proactively rebalance demand.",
-  "description": [
-    "Designed an internal FFRO console that combines short-term demand forecasts with network constraints (capacity, cut-off times, SLAs) to generate recommended routing plans.",
-    "Modeled how orders flow across FCs and regional nodes, surfacing when and where the network will hit stress thresholds under different scenarios.",
-    "Built planner workflows around simulation: planners can tweak constraints, rerun scenarios, and compare the impact of different routing strategies before committing."
-  ],
+  "tagline": "Forecasting + routing recommendations for Amazon fulfillment operations.",
+  "category": "Supply Chain / Fulfillment Ops",
+  "company": "Amazon (hypothetical)",
+  "role": "Product Management & Systems Design",
+  "proof": "I can model fulfillment constraints and translate them into a decision cockpit: demand forecasts + capacity + routing options + measurable tradeoffs.",
+  "problem": "Fulfillment performance degrades when forecasts, capacity, and routing decisions live across disconnected tools. Teams react late to demand shifts, misallocate volume, and miss service-level targets because the network plan isn’t recomputed fast enough.",
   "impact": [
-    "Reduces transportation and handling cost by 10–15% in modeled scenarios by routing to under-utilized capacity.",
-    "Improves on-time delivery rates by surfacing SLA risk earlier and recommending corrective routing actions.",
-    "Cuts manual planning time by giving planners a single place to run scenarios, approve plans, and push changes to downstream systems."
+    "Improved forecast-to-plan cycle time by consolidating demand, capacity, and routing into one workflow.",
+    "Reduced late-stage volume rework by surfacing constraint violations earlier (capacity, lane limits, service levels).",
+    "Enabled faster scenario planning with clear tradeoffs across cost, time, and service performance."
   ],
-  "tags": ["Supply Chain", "Forecasting", "Optimization", "ML", "Internal Tools"],
   "year": "2025",
-  "liveUrl": "",
+  "liveUrl": "https://www.amazonfulfill.com",
   "repoUrl": "https://github.com/lelandsequel/amazonfulfill",
-  "deckUrl": "/decks/amazon-ffro.pdf",
-  "demoVideoUrl": ""
+  "deckUrl": "",
+  "tags": [
+    "Supply Chain",
+    "Forecasting",
+    "Optimization",
+    "Internal Tools",
+    "Operations"
+  ],
+  "description": [
+    "FFRO is a hypothetical internal tool for Amazon network ops teams to forecast demand and generate routing recommendations across fulfillment nodes.",
+    "It supports scenario planning and constraint-aware routing decisions so operators can recompute plans quickly when conditions change."
+  ]
 }
